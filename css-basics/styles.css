@@ -1,0 +1,138 @@
+:root {
+  --text-color: hsl(260, 40%, 90%);
+  --muted-text-color: hsl(260, 20%, 65%);
+  --heading-color: hsl(270, 100%, 75%);
+  --link-color: hsl(265, 100%, 80%);
+  --background-color: hsl(260, 30%, 12%);
+
+  --heading-font: "Gelasio", serif;
+  --body-font: "Source Sans 3", sans-serif;
+}
+
+html {
+  font-family: var(--body-font);
+  font-size: 20px;
+  line-height: 1.45;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+h1 {
+  border-block-start: 10px solid var(--heading-color);
+  margin-block-start: 4rem;
+  margin-block-end: 2rem;
+  font-family: var(--heading-font);
+  font-weight: 600;
+}
+
+h2 {
+  margin-block-start: 1.5rem;
+  margin-block-end: 0.5rem;
+  font-family: var(--heading-font);
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--heading-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+abbr {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--heading-color);
+  text-decoration-thickness: 2px;
+}
+
+blockquote {
+  margin-inline: 1.5rem 0;
+  border-inline-start: 4px solid var(--heading-color);
+  padding-inline: 1rem;
+  font-size: 0.9rem;
+  color: var(--muted-text-color);
+}
+
+ul,
+ol {
+  padding-inline-start: 1.5rem;
+}
+
+li {
+  margin-block: 0 0.5rem;
+}
+
+li::marker {
+  color: var(--heading-color);
+}
+
+pre {
+  padding: 1rem;
+  background-color: color-mix(in srgb, var(--muted-text-color), black 40%);
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.75rem;
+}
+
+figure {
+  margin-inline: 0;
+}
+
+figure img {
+  display: block;
+  margin-inline: auto;
+  border-radius: 4px;
+}
+
+figcaption {
+  margin-block-start: 0.5rem;
+  font-size: 0.8rem;
+}
+
+main {
+  margin-inline: auto;
+  max-width: 65ch;
+}
+
+footer {
+  margin-inline: auto;
+  max-width: 65ch;
+}
+
+img {
+  max-width: 100%;
+}
+
+main * {
+  margin-block: 0 1rem;
+}
+
+footer {
+  margin-block-start: 3rem;
+  margin-inline: auto;
+  padding-block: 1.5rem 3rem;
+  border-block-start: 2px solid var(--heading-color);
+  max-width: 65ch;
+  color: var(--muted-text-color);
+}
+
+footer * {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.intro {
+  margin-block-end: 2rem;
+  font-size: 1.2em;
+}
+
+.caps {
+  text-transform: uppercase;
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}

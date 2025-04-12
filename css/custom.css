@@ -1,0 +1,24 @@
+:root {
+  --bg: hsl(280, 50%, 95%);
+  --border: hsl(280, 30%, 40%);
+  --accent-bg: hsl(280, 60%, 90%);
+  --text: hsl(280, 30%, 20%);
+  --accent: hsl(320, 80%, 60%);
+  --accent-hover: hsl(320, 90%, 65%);
+  --marked: hsl(160, 100%, 70%);
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  :root,
+  ::backdrop {
+    color-scheme: dark;
+    --bg: hsl(280, 30%, 10%);
+    --border: hsl(280, 20%, 30%);
+    --accent-bg: hsl(280, 25%, 15%);
+    --text: hsl(280, 80%, 90%);
+    --accent: hsl(190, 100%, 70%);
+    --accent-hover: hsl(190, 90%, 75%);
+    --marked: hsl(60, 100%, 60%);
+  }
+}
